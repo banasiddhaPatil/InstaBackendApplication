@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo h2 {
+    margin: 0;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+  }
+  
+  .nav-icons i {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .stories {
+    display: flex;
+    overflow-x: scroll;
+    margin: 10px 0;
+  }
+  
+  .story {
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .post-feed {
+    margin-top: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .post-header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .post-actions i {
+    margin: 10px 5px;
+    font-size: 20px;
+  }
+  
+  .comments {
+    padding: 10px;
+  }
+  
+  .sidebar {
+    margin-top: 20px;
+  }
+  
+  .suggestion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+
+  .login-btn {
+    background-color: #0095f6; /* Instagram blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 10%;
+    text-align: center;
+  }
+  
+  .login-btn:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+  }
+  
+  .login-btn:active {
+    background-color: #005f8a; /* Even darker blue on click */
+  }
+  
+  .login-btn:disabled {
+    background-color: #b2dffc; /* Lighter blue when disabled */
+    cursor: not-allowed;
+  }
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .post-card h2 {
+    margin-top: 0;
+  }
+  
+  .post-card p {
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Nav Bar component -->
+    <nav class="navbar">
+        <div class="logo">
+          <h2>Insta Clone Application</h2>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+        </div>
+        <button class="login-btn" (click)="onClick()">Login</button>
+        <div class="nav-icons">
+          <i class="fa fa-home"></i>
+          <i class="fa fa-comment"></i>
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-user"></i>
+        </div>
+      </nav>
+      <!-- post -->
+      <div class="post-list">
+        <div *ngFor="let post of post" class="post-card">
+          <h2>{{ post.postCaption }}</h2>
+          <p>{{ post.postContent }}</p>
+          <p><strong>Posted by:</strong> {{ post.postOwner.userName }} ({{ post.postOwner.userHandle }})</p>
+          <p><strong>Posted on:</strong> {{ post.postCreatedTimeStamp | date:'short' }}</p>
+          <p *ngIf="post.postLocation"><strong>Location:</strong> {{ post.postLocation }}</p>
+        </div>
+      </div>
+      
+      
+     <!-- Footer  -->
+     <footer class="footer">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </footer> 
+     
+</body>
+</html>

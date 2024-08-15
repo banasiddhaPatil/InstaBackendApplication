@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="create-account-container">
+        <div class="create-account-box">
+          <h2>Create Account</h2>
+          <form (ngSubmit)="onClick()">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" [(ngModel)]="user.userName" name="username" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" [(ngModel)]="user.userEmail" name="email" required>
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password"[(ngModel)]="user.userPassword" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="userHandel">User Handel</label>
+                <input type="text" id="userHandel"[(ngModel)]="user.userHandle" name="userHandel" required>
+            </div>
+            <div class="input-group">
+                <label for="userBio">User Bio</label>
+                <input type="text" id="userBio"[(ngModel)]="user.userBio" name="userBio">
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender"[(ngModel)]="user.gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="MALE">Male</option>
+                    <option value="FEMALE">Female</option>
+                    <option value="TRANS">TRANS</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="accountType">Account Type</label>
+                <select id="accountType" name="accountType"[(ngModel)]="user.accountType" required>
+                    <option value="" disabled selected >Select Account Type</option>
+                    <option value="PUBLIC">Public</option>
+                    <option value="PRIVATE">Private</option>
+                </select>
+            </div>
+
+            <button type="submit" class="create-account-btn">Create Account</button>
+            <div class="options">
+              <a routerLink="login">Already have an account? Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+</body>
+</html>
